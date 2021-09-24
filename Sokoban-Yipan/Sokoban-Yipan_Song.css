@@ -1,0 +1,134 @@
+body{
+    background-color:black;
+    color:white;
+}
+#select{
+    position:absolute;
+    top:100px;
+    left:50px;
+    font-size:30px;
+}
+#levels{
+    position:absolute;
+    top:180px;
+    left:50px;
+    width:170px;
+    height:45px;
+    font-size:20px;
+}
+#Map{
+    position: absolute;
+    top:200px;
+    left:500px;
+}
+#step{
+    position:absolute;
+    top: 250px;
+    left:50px;
+    color:white;
+    font-size:30px;
+}
+
+#push{
+    position:absolute;
+    top: 300px;
+    left:50px;
+    color:white;
+    font-size:30px;
+}
+#retreat {
+    position:absolute;
+    top: 400px;
+    left:100px;
+    font-weight: bold;
+    font-size:23px;
+    color:white;
+    height:60px;
+    width:100px;
+    background-color: ForestGreen;
+    text-align: center;
+    text-decoration: none;
+    border: 4px solid;
+    border-color: #FAFAD2 #3CB371 #3CB371 #FAFAD2;
+    outline: 0;
+    border-radius: 30px;
+}
+#retreat:hover{
+    background:#ADFF2F center center;
+}
+#reset {
+    position:absolute;
+    top: 500px;
+    left:100px;
+    font-weight: bold;
+    font-size:23px;
+    color:white;
+    height:60px;
+    width:100px;
+    background-color: ForestGreen;
+    text-align: center;
+    text-decoration: none;
+    border: 4px solid;
+    border-color: #FAFAD2 #3CB371 #3CB371 #FAFAD2;
+    outline: 0;
+    border-radius: 30px;
+}
+#reset:hover{
+    background:#ADFF2F center center;
+}
+#title{
+    text-align: center;
+    font-weight: bolder;
+    top:100px;
+    font-size: 60px;
+}
+#fighting{
+    position:absolute;
+    font-weight: bolder;
+    top: 250px;
+    left:1000px;
+    color:white;
+    font-size:50px;
+}
+#alert,#end{
+    background-color: #FFD700;
+    border-radius: 30px;
+    width: 410px;
+    height: 300px;
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    overflow: hidden;
+    display: none;
+}
+#congratulations,#words{
+    font-weight: bold;
+    font-size:20px;
+    line-height: 50px;
+    display: block;
+    width: 90%;
+    outline: none;
+    padding-left: 5px;
+    color:black;
+}
+#cancel,#confirm,#cancelFifth,#confirmFifth{
+    font-weight: bold;
+    font-size:15px;
+    color: black;
+    top: 100px;
+    /*flex: 1;*/
+    /*margin: 2px;*/
+    /*transition: all 0.2s;*/
+    background-color: ForestGreen;
+    border-color: #FAFAD2 #3CB371 #3CB371 #FAFAD2;
+    border-radius: 30px;
+    height:45px;
+    width:100px;
+}
+#cancel:hover,#confirm:hover,#cancelFifth:hover,#confirmFifth:hover{
+    color: white;
+    background:#ADFF2F center center;
+}

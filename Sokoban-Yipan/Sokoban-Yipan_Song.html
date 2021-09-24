@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sokoban game</title>
+    <link rel="stylesheet" type="text/css" href="Sokoban-Yipan_Song.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="Sokoban-Yipan_Song.js" defer></script>
+</head>
+<body onload="getMap()">
+    <div id="alert">
+        <p id="congratulations">Congratulations！<br />You have accomplished this level! <br />Do you want to enter the next level?</p>
+        <div id="submit">
+            <button id="cancel" onclick="getCancel()">No!</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="confirm" onclick="getConfirm()">Yes!</button>
+        </div>
+    </div>
+    <div id="end">
+        <p id="words">You have  already accomplished the last level! <br />Do you want to return the first level？</p>
+        <div id="subFifth">
+            <button id="confirmFifth" onclick="getFifth()">No!</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="cancelFifth" onclick="getFirst()">Yes!</button>
+        </div>
+    </div>
+    <p id="title">Sokoban</p>
+    <p id="select">Please choose a level</p>
+    <select id="levels" onchange="getLevel()">
+        <option value=0>The first level</option>
+        <option value=1>The second level</option>
+        <option value=2>The third level</option>
+        <option value=3>The fourth level</option>
+        <option value=4>The fifth level</option>
+    </select>
+    <div id="step" >You have moved 0 steps</div>
+    <div id="push" >You have pushed 0 times</div>
+    <div id="Map" ></div>
+    <button id="retreat" onclick="getRetreat()">Retreat</button>
+    <button id="reset" onclick="getReset()">Reset</button>
+    <p id="fighting">fighting!</p>
+</body>
+</html>
